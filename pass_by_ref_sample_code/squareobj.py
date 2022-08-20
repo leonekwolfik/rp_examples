@@ -1,0 +1,1 @@
+# squareobj.py

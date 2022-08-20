@@ -1,0 +1,10 @@
+$ python decorated.py
+@how_long(pingala) -> 4.17e-07s
+@how_long(pingala) -> 3.82e-07s
+@how_long(pingala) -> 2.51e-07s
+@how_long(pingala) -> 2.23e-07s
+@how_long(pingala) -> 2.15e-07s
+@how_long(pingala) -> 2.42e-07s
+@how_long(pingala) -> 2.12e-07s
+@how_long(pingala) -> 6.26e-05s
+7

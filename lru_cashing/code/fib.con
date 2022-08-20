@@ -1,0 +1,26 @@
+$ python fib.py 10
+Calculating Fibonacci from 0 to 10
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89
+$ python fib.py 15
+Calculating Fibonacci from 5 to 15
+8
+13
+21
+34
+55
+89
+144
+233
+377
+610
+987

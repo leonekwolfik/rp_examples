@@ -1,0 +1,26 @@
+$ python argdeco.py
+@how_longer(pingala)
+   : Fibonacci, who?
+   : 4.15e-07s
+@how_longer(pingala)
+   : Fibonacci, who?
+   : 3.77e-07s
+@how_longer(pingala)
+   : Fibonacci, who?
+   : 2.15e-07s
+@how_longer(pingala)
+   : Fibonacci, who?
+   : 2.05e-07s
+@how_longer(pingala)
+   : Fibonacci, who?
+   : 1.89e-07s
+@how_longer(pingala)
+   : Fibonacci, who?
+   : 1.85e-07s
+@how_longer(pingala)
+   : Fibonacci, who?
+   : 1.86e-07s
+@how_longer(pingala)
+   : Fibonacci, who?
+   : 8.89e-05s
+7

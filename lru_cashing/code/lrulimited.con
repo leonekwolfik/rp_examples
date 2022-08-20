@@ -1,0 +1,28 @@
+$ python lrulimited.py
+fibonacci(0)
+  : Miss 0
+  : result=1
+fibonacci(1)
+  : Miss 1
+  : result=1
+fibonacci(2)
+  : Miss 2
+  : result=2
+fibonacci(3)
+  : Miss 3
+  : result=3
+fibonacci(4)
+  : Miss 4
+  : Miss 3
+  : Miss 2
+  : Miss 1
+  : Miss 0
+  : result=5
+fibonacci(5)
+  : Miss 5
+  : Miss 4
+  : Miss 3
+  : Miss 2
+  : Miss 1
+  : Miss 0
+  : result=8

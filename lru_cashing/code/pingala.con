@@ -1,0 +1,84 @@
+$ python pingala_time.py 10
+Calculating Pingala using a max cache size of 10
+   Miss: 7, depth=1
+  7:1 (5.87e-06s)
+   Miss: 8, depth=1
+   Miss: 6, depth=2
+   Miss: 5, depth=3
+   Miss: 4, depth=4
+   Miss: 3, depth=5
+   Miss: 2, depth=6
+   Miss: 1, depth=7
+  8:7 (1.87e-05s)
+   Miss: 9, depth=1
+  9:13 (3.17e-06s)
+   Miss: 10, depth=1
+ 10:25 (3.16e-06s)
+   Miss: 11, depth=1
+ 11:49 (3.69e-06s)
+CacheInfo(hits=22, misses=11, maxsize=10, currsize=10)
+$ python pingala_time.py 5
+Calculating Pingala using a max cache size of 5
+   Miss: 7, depth=1
+  7:1 (5.96e-06s)
+   Miss: 8, depth=1
+   Miss: 6, depth=2
+   Miss: 5, depth=3
+   Miss: 4, depth=4
+   Miss: 3, depth=5
+   Miss: 2, depth=6
+   Miss: 1, depth=7
+  8:7 (1.92e-05s)
+   Miss: 9, depth=1
+   Miss: 7, depth=2
+   Miss: 6, depth=3
+   Miss: 5, depth=4
+   Miss: 4, depth=5
+   Miss: 3, depth=6
+   Miss: 2, depth=7
+  9:13 (1.65e-05s)
+   Miss: 10, depth=1
+   Miss: 8, depth=2
+   Miss: 7, depth=3
+   Miss: 6, depth=4
+   Miss: 5, depth=5
+   Miss: 4, depth=6
+   Miss: 3, depth=7
+   Miss: 2, depth=8
+   Miss: 1, depth=9
+   Miss: 7, depth=10
+   Miss: 6, depth=11
+   Miss: 5, depth=12
+   Miss: 4, depth=13
+   Miss: 3, depth=14
+ 10:25 (0.000179s)
+   Miss: 11, depth=1
+   Miss: 9, depth=2
+   Miss: 8, depth=3
+   Miss: 7, depth=4
+   Miss: 6, depth=5
+   Miss: 5, depth=6
+   Miss: 4, depth=7
+   Miss: 3, depth=8
+   Miss: 2, depth=9
+   Miss: 1, depth=10
+   Miss: 7, depth=11
+   Miss: 6, depth=12
+   Miss: 5, depth=13
+   Miss: 4, depth=14
+   Miss: 3, depth=15
+   Miss: 2, depth=16
+   Miss: 8, depth=17
+   Miss: 7, depth=18
+   Miss: 6, depth=19
+   Miss: 5, depth=20
+   Miss: 4, depth=21
+   Miss: 3, depth=22
+   Miss: 2, depth=23
+   Miss: 1, depth=24
+   Miss: 7, depth=25
+   Miss: 6, depth=26
+   Miss: 5, depth=27
+   Miss: 4, depth=28
+ 11:49 (6.63e-05s)
+CacheInfo(hits=4, misses=57, maxsize=5, currsize=5)

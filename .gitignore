@@ -1,0 +1,6 @@
+
+._*
+*.pyc
+venv*
+*.wav
+*.pdf
