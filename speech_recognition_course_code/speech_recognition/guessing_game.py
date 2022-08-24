@@ -4,6 +4,7 @@ import time
 
 import speech_recognition as sr
 
+
 def recognize_speech_from_mic(recognizer, microphone):
     """Transcribe speech from recorded from `microphone`.
 
@@ -86,7 +87,7 @@ if __name__ == "__main__":
         #     re-prompt the user to say their guess again. Do this up
         #     to PROMPT_LIMIT times
         for j in range(PROMPT_LIMIT):
-            print(f'Guess {i+1}. Speak!')
+            print(f'Guess {i + 1}. Speak!')
             guess = recognize_speech_from_mic(recognizer, microphone)
             if guess["transcription"]:
                 break

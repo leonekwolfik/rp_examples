@@ -16,6 +16,7 @@ class Coordinate:
                 f'"{self._name}" must be a number'
             ) from None
 
+
 class Point:
     x = Coordinate()
     y = Coordinate()

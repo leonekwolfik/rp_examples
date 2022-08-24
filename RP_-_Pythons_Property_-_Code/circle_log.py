@@ -8,6 +8,7 @@ logging.basicConfig(
     datefmt="%H:%M:%S"
 )
 
+
 class Circle:
     def __init__(self, radius):
         self._msg = '"radius" was %s. Current value: %s'

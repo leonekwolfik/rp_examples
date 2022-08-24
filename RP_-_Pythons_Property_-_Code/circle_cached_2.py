@@ -2,6 +2,7 @@
 
 from time import sleep
 
+
 class Circle:
     def __init__(self, radius):
         self.radius = radius
@@ -21,3 +22,12 @@ class Circle:
             sleep(0.5)  # Simulate a costly computation
             self._diameter = self._radius * 2
         return self._diameter
+
+
+c = Circle(5)
+print(c.diameter)
+print(c.diameter)
+
+c.radius = 15
+print(c.diameter)
+print(c.diameter)

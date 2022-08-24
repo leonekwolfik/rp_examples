@@ -3,6 +3,7 @@
 import hashlib
 import os
 
+
 class User:
     def __init__(self, name, password):
         self.name = name
@@ -18,4 +19,3 @@ class User:
         self._hashed_password = hashlib.pbkdf2_hmac(
             "sha256", plaintext.encode("utf-8"), salt, 100_000
         )
-

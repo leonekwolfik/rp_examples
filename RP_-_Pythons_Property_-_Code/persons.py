@@ -14,6 +14,7 @@ class Person:
 
     # Person implementation...
 
+
 class Employee(Person):
     @property
     def name(self):
