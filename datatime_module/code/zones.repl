@@ -1,0 +1,39 @@
+>>> # Naive vs Aware
+>>> from datetime import datetime
+>>> now = datetime.now()
+>>> local_now = now.astimezone()
+>>> local_now
+datetime.datetime(2022, 2, 20, 11, 30, 44, 960933, tzinfo=datetime.timezone(datetime.timedelta(days=-1, seconds=68400), 'EST'))
+>>> local_tz = local_now.tzinfo
+>>> tzname = local_tz.tzname(local_now)
+>>> tzname
+'EST'
+>>> # Zone Info Database (Python >= 3.9)
+>>> # python -m pip install backports.zoneinfo
+>>> from zoneinfo import ZoneInfo
+>>> london_tz = ZoneInfo("Europe/London")
+>>> datetime.now()
+datetime.datetime(2022, 2, 20, 11, 40, 5, 871636)
+>>> london_now = datetime.now(tz=london_tz)
+>>> london_now
+datetime.datetime(2022, 2, 20, 16, 40, 32, 767710, tzinfo=zoneinfo.ZoneInfo(key='Europe/London'))
+>>> london_now.tzname()
+'GMT'
+>>> datetime.utcnow()
+datetime.datetime(2022, 2, 20, 16, 42, 7, 375392)
+>>> datetime.now(tz=ZoneInfo('UTC'))
+datetime.datetime(2022, 2, 20, 16, 42, 33, 687608, tzinfo=zoneinfo.ZoneInfo(key='UTC'))
+>>> # Timezones are messy
+>>> from datetime import datetime, timedelta
+>>> from zoneinfo import ZoneInfo
+>>> hour = timedelta(hours=1)
+>>> ny = ZoneInfo("America/New_York")
+>>> ny.utcoffset(datetime(2006, 10, 31, 19, 00)) / hour
+-5.0
+>>> ny.utcoffset(datetime(2007, 10, 31, 19, 00)) / hour
+-4.0
+>>> xmas = ZoneInfo("Pacific/Kiritimati")
+>>> xmas.utcoffset(datetime(1994, 12, 30)) / hour
+-10.0
+>>> xmas.utcoffset(datetime(1995, 1, 1)) / hour
+14.0
