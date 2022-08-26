@@ -1,0 +1,13 @@
+>>> ### Using a * operator in an f-string
+>>> # Py3.9
+>>> # Inline use of * operator:
+>>> q1 = ["January", "February", "March"]
+>>> q2 = ["April", "May", "June"]
+>>> h1 = [*q1, *q2]
+>>> h1
+['January', 'February', 'March', 'April', 'May', 'June']
+
+>>> # f-string use of * operator
+>>> print(f"Months from quarter 1 are {*q1}")
+  File "<stdin>", line 1
+SyntaxError: can't use starred expression here

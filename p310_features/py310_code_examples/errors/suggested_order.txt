@@ -1,0 +1,21 @@
+I went through the errors in the What's New doc in the order they presented,
+but, there is probably a better grouping, keeping like stuff together:
+
+
+Dictionaries and comprehensions:
+    e02
+    e04
+    e05
+    e07
+    e01
+
+Exceptions:
+    e06
+    e08
+
+Other:
+    e03
+    e10
+    e11
+    e12
+    e13

@@ -1,0 +1,11 @@
+>>> from cards import Card, is_red
+>>> is_red(Card("2", "♡"))
+True
+>>> is_red(Card("K", "♣"))
+False
+>>> is_red("card")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/realpython/pattern/cards.py", line 19, in is_red
+    raise ValueError(f"{card} is not a Card object")
+ValueError: card is not a Card object

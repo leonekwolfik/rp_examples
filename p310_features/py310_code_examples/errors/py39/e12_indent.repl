@@ -1,0 +1,8 @@
+>>> ### Indent errors
+>>> # Py3.9
+>>> if 3 > 2:
+... print("Bigger")
+  File "<stdin>", line 2
+    print("Bigger")
+    ^
+IndentationError: expected an indented block

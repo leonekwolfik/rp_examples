@@ -1,0 +1,16 @@
+>>> ### Unparenthesised tuples in a comprehension
+>>> # Py 3.9
+>>> 
+>>> # Without comprehension:
+>>> dict(zip('abcd', '1234'))
+{'a': '1', 'b': '2', 'c': '3', 'd': '4'}
+>>> # With comprehension, working:
+>>> {(x,y) for x,y in zip('abcd', '1234')}
+{('c', '3'), ('b', '2'), ('a', '1'), ('d', '4')}
+>>> 
+>>> # Forget the parenthesis:
+>>> {x,y for x,y in zip('abcd', '1234')}
+  File "<stdin>", line 1
+    {x,y for x,y in zip('abcd', '1234')}
+         ^
+SyntaxError: invalid syntax

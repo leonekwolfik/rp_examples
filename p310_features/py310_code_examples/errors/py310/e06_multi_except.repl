@@ -1,0 +1,8 @@
+>>> # Py3.10
+>>> try:
+...     do_something()
+... except ValueError, AttributeError:
+  File "<stdin>", line 3
+    except ValueError, AttributeError:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: multiple exception types must be parenthesized

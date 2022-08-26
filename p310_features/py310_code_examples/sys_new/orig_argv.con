@@ -1,0 +1,6 @@
+$ python show_args.py
+argv: ['show_args.py']
+orig_argv: ['python', 'show_args.py']
+$ python -X utf8 -O show_args.py myarg 42
+argv: ['show_args.py', 'myarg', '42']
+orig_argv: ['python', '-X', 'utf8', '-O', 'show_args.py', 'myarg', '42']

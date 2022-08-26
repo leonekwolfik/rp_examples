@@ -1,0 +1,9 @@
+>>> ### try blocks without except
+>>> # Py3.9
+>>> try:
+...     do_something()
+... print("Got here")
+  File "<stdin>", line 3
+    print("Got here")
+    ^
+SyntaxError: invalid syntax

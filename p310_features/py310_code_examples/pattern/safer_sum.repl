@@ -1,0 +1,15 @@
+>>> from safer_sum import sum_list
+>>> sum_list([1, 3.14, 99])
+103.14
+>>> sum_list(139)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/ctrudeau/s/RealPython/019_Python310/code/pattern/safer_sum.py", line 9, in sum_list
+    raise ValueError("Can only sum lists of numbers")
+ValueError: Can only sum lists of numbers
+>>> sum_list(["a", "b"])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/ctrudeau/s/RealPython/019_Python310/code/pattern/safer_sum.py", line 9, in sum_list
+    raise ValueError("Can only sum lists of numbers")
+ValueError: Can only sum lists of numbers

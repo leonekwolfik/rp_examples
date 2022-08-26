@@ -1,0 +1,11 @@
+>>> # Py3.10
+>>> import collections
+>>> collections.namedtopl
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: module 'collections' has no attribute 'namedtopl'. Did you mean: 'namedtuple'?
+>>> fool = 3
+>>> foo
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'foo' is not defined. Did you mean: 'fool'?

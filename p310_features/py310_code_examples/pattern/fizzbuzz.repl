@@ -1,0 +1,9 @@
+>>> from fizzbuzz import fizzbuzz
+>>> fizzbuzz(3)
+'fizz'
+>>> fizzbuzz(14)
+'14'
+>>> fizzbuzz(15)
+'fizzbuzz'
+>>> fizzbuzz(65)
+'buzz'

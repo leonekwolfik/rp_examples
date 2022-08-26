@@ -1,0 +1,9 @@
+>>> # Py3.10
+>>> months = {
+...     1:"January",
+...     2:
+... }
+  File "<stdin>", line 3
+    2:
+     ^
+SyntaxError: expression expected after dictionary key and ':'

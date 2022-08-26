@@ -1,0 +1,16 @@
+>>> import sys
+>>> len(sys.modules)
+76
+>>> sorted(sys.modules)[-5:]
+['typing', 'typing.io', 'typing.re', 'warnings', 'zipimport']
+>>> len(sys.stdlib_module_names)
+302
+>>> sorted(sys.stdlib_module_names)[-5:]
+['zipapp', 'zipfile', 'zipimport', 'zlib', 'zoneinfo']
+>>> import aiofiles
+>>> len(sys.modules)
+157
+>>> len(sys.stdlib_module_names)
+302
+>>> set(mod for mod in sys.modules if "." not in mod) - sys.stdlib_module_names
+{'__main__', '_virtualenv', 'aiofiles'}

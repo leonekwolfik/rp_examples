@@ -1,0 +1,6 @@
+>>> # Py 3.10:
+>>> print("Count:", x for x in range(10))
+  File "<stdin>", line 1
+    print("Count:", x for x in range(10))
+                    ^^^^^^^^^^^^^^^^^^^^
+SyntaxError: Generator expression must be parenthesized

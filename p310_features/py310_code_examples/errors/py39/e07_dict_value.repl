@@ -1,0 +1,10 @@
+>>> ### Missing value in dict
+>>> # Py3.9
+>>> months = {
+...     1:"January",
+...     2:
+... }
+  File "<stdin>", line 4
+    }
+    ^
+SyntaxError: invalid syntax

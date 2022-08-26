@@ -1,0 +1,14 @@
+>>> ### Parenthesis missing in multiple catch
+>>> # Py3.9
+>>> # Correct:
+>>> try:
+...     do_something()
+... except (ValueError, AttributeError):
+...     print("Problem happened")
+...
+>>> # Forgetting the parenthesis:
+>>> try:
+...     do_something()
+... except ValueError, AttributeError:
+  File "<stdin>", line 3
+    except ValueError, AttributeError:

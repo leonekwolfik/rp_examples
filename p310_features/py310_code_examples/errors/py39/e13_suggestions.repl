@@ -1,0 +1,17 @@
+>>> ### AttributeErrors and NameErrors will now offer suggestions (note this is
+>>> # dependent on how the error is called, underlying call in the REPL is
+>>> # PyErr_Display(), not all REPLs use this (IPython doesn't) so this may not
+>>> # work everywhere
+>>> # Py3.9
+>>> import collections
+>>> collections.namedtopl
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/collections/__init__.py", line 68, in __getattr__
+    raise AttributeError(f'module {__name__!r} has no attribute {name!r}')
+AttributeError: module 'collections' has no attribute 'namedtopl'
+>>> fool = 3
+>>> foo
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'foo' is not defined

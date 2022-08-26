@@ -1,0 +1,8 @@
+>>> # Py3.10
+>>> try:
+...     do_something()
+... print("Got here")
+  File "<stdin>", line 3
+    print("Got here")
+    ^^^^^
+SyntaxError: expected 'except' or 'finally' block

@@ -1,0 +1,14 @@
+>>> words = [7742, 11539, 16898, 13447, 4608, 6628, 2683, 6156, 2623, 6948]
+>>> views = [8368, 5901, 3978, 3329, 2611, 2096, 1515, 1177, 814, 467]
+>>> import statistics
+>>> statistics.covariance(words, views)
+5292289.977777777
+>>> statistics.correlation(words, views)
+0.454180067865917
+>>> statistics.linear_regression(words, views)
+LinearRegression(slope=0.2424443064354672, intercept=1103.6954940247645)
+>>> lr = statistics.linear_regression(words, views)
+>>> lr.slope
+0.2424443064354672
+>>> 10000 * lr.slope + lr.intercept
+3528.1385583794363

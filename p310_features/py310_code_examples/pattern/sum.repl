@@ -1,0 +1,5 @@
+>>> from sum import sum_list
+>>> sum_list([1, 3, 9])
+13
+>>> sum_list(139)
+>>>

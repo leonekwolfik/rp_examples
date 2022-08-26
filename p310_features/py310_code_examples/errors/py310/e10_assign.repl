@@ -1,0 +1,6 @@
+>>> # Py3.10
+>>> if pos = 3:
+  File "<stdin>", line 1
+    if pos = 3:
+       ^^^^^^^
+SyntaxError: invalid syntax. Maybe you meant '==' or ':=' instead of '='?

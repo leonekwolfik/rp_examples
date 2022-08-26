@@ -1,0 +1,7 @@
+>>> ### Assignment instead of comparison
+>>> # Py3.9
+>>> if pos = 3:
+  File "<stdin>", line 1
+    if pos = 3:
+           ^
+SyntaxError: invalid syntax

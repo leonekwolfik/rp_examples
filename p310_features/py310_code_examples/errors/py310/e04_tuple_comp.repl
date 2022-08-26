@@ -1,0 +1,6 @@
+>>> # Py3.10
+>>> {x,y for x,y in zip('abcd', '1234')}
+  File "<stdin>", line 1
+    {x,y for x,y in zip('abcd', '1234')}
+     ^^^
+SyntaxError: did you forget parentheses around the comprehension target?

@@ -1,0 +1,10 @@
+>>> ### Missing a comma in a collection literal:
+>>> # Py3.9
+>>> months = {
+...     1:"January",
+...     2:"February"
+...     3:"March",
+  File "<stdin>", line 4
+    3:"March",
+    ^
+SyntaxError: invalid syntax

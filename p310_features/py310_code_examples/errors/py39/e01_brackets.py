@@ -1,0 +1,6 @@
+# Missing brackets
+months = {
+    1:"January", 2:"February", 3:"March",
+    4:"April"
+
+print(len(months))
