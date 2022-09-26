@@ -12,11 +12,8 @@ def new_sum_list(numbers: list[float | int]) -> float | int:
 user_id = 1234
 isinstance(user_id, str | int)
 
-# --------
-from typing import TypeAlias
 
-Card: TypeAlias = tuple[str, str]
-Deck: TypeAlias = list[Card]
+# --------
 
 
 def get_ace(suit: str | None) -> tuple[str, str]:
@@ -28,10 +25,16 @@ def get_ace(suit: str | None) -> tuple[str, str]:
 
 # -------
 from typing import TypeGuard, Any
+from typing import TypeAlias
+
+Card: TypeAlias = tuple[str, str]
+Deck: TypeAlias = list[Card]
 
 
 def is_deck_of_cards(obj: Any) -> TypeGuard[Deck]:
-    return isinstance(obj, Deck)
+    if not isinstance(obj, list):
+        return False
+    return all((isinstance(card_elem, str) for card_elem in card) for card in obj)
 
 
 def get_score(card_or_deck: Card | Deck) -> int:
@@ -39,8 +42,19 @@ def get_score(card_or_deck: Card | Deck) -> int:
         pass
 
 
-t = is_deck_of_cards("abc")
+print(is_deck_of_cards("abc"))
+print(is_deck_of_cards(("A", 'B')))
+print(is_deck_of_cards((("A", 'B'), ('C', 'D'))))
+c = Card(('A', 'B'))
+d = Deck()
+d.append(c)
+print(is_deck_of_cards((("A", 'B'), ('C', 'D'))))
+print(is_deck_of_cards(d))
 
+l = []
+t = ('A', 'B')
+l.append(t)
+print(is_deck_of_cards(l))
 
 import inspect
 
